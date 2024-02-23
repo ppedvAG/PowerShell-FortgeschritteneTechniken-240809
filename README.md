@@ -15,3 +15,9 @@ Agenda:
     - Functions
     - SkriptModule 
     - cmdletBinding
+- Advanced Parameter
+    - ParameterSetName
+    - Pipelinefähigkeit
+    - Mandatory
+    - PositionlaBinding (cmdletBinding)
+- DSC 
