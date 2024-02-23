@@ -23,3 +23,5 @@ Agenda:
 - DSC 
 - Debugging
 - Skript Signierung
+- Powershell Jobs
+- PowerShell Workflows
