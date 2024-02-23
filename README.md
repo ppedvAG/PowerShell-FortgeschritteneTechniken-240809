@@ -21,3 +21,5 @@ Agenda:
     - Mandatory
     - PositionlaBinding (cmdletBinding)
 - DSC 
+- Debugging
+- Skript Signierung

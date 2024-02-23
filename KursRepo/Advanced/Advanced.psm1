@@ -78,3 +78,19 @@ param(
     }
     return $Name
 }
+
+function Test-Debug
+{
+[cmdletBinding()]
+param(
+    [string]$Value1 ="",
+
+    [string]$Value2 = ""
+)
+    Write-Host -Object $Value1 -ForegroundColor Green
+
+    Write-Debug -Message "Vor Ausgabe2"
+
+    Write-Host -Object $Value2 -ForegroundColor Magenta
+
+}
