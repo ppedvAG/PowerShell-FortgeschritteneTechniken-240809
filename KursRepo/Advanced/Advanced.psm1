@@ -94,3 +94,26 @@ param(
     Write-Host -Object $Value2 -ForegroundColor Magenta
 
 }
+
+function Out-Voice
+{
+[cmdletBinding()]
+param(
+[Parameter(Mandatory=$true)]
+[Validatelength(5,100)]
+[string]$Text
+)
+
+if((Get-Service -Name Audiosrv).StartType -ne "Running")
+{
+    Start-Service -Name Audiosrv
+}
+
+Add-Type -AssemblyName System.Speech
+$speaker = New-Object -TypeName System.Speech.Synthesis.SpeechSynthesizer
+
+$speaker.Speak($Text)
+
+}
+
+
