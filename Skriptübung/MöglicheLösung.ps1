@@ -33,8 +33,11 @@ if(Test-Path -Path $TestDirPath)
     }
     else
     {
+        <# ersetzt durch saubere Fehler behandlung
         Write-Host -Object "Ordner bereits vorhanden" -ForegroundColor Red
         exit
+        #>
+        throw $TestDirPath
     }
 }
 

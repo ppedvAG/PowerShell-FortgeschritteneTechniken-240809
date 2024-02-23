@@ -8,3 +8,10 @@ Agenda:
     - 6
     - 7
 - Git
+- Scripting
+    - Parameter
+    - Parameter Validierung
+    - Fehlerbehandlung
+    - Functions
+    - SkriptModule 
+    - cmdletBinding
